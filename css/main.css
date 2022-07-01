@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+
+body{
+    font-family: "Noto Sans TC", Arial, Helvetica, sans-serif;
+    color: #666;
+}
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+.mainBGcolor{
+    background: #3D291F;
+    color: #FFF;
+}
+
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.fz-1{
+    font-size: 8px;
+}
+
+.fz-2{
+    font-size: 16px;
+}
+
+.fz-3{
+    font-size: 24px;
+}
+
+.fz-4{
+    font-size: 32px;
+}
+
+.fz-5{
+    font-size: 40px;
+}
+
+.fw-6{
+    font-weight: 600;
+}
+
+.fw-5{
+    font-weight: 500;
+}
+
+a img{
+    transition: 0.5s;
+}
+
+a img:hover{
+    opacity: 0.7;
+}
+
+hr{
+    border-top: #3d291f6a 1px solid;
+}
+
+.navbar{
+    background: #FFF;
+    box-shadow: 0 0 5px rgb(124, 124, 124);
+}
+
+.navbar a{
+    color: rgba(102, 102, 102, 0.9);
+    transition: 0.5s;
+}
+
+.navbar a:hover{
+    color: rgba(61, 41, 31, 0.6);
+}
+
+.nav1,.nav2,.nav3,.nav4,.nav5{
+    width: 130px;
+    text-align: center;
+}
+
+@media (max-width:992px) {
+    .nav1,.nav2,.nav3,.nav4,.nav5{
+        text-align: left;
+    }
+}
+
+.nav1::before{
+    /* 熱銷商品 */
+    content: '\71b1\92b7\5546\54c1';
+}
+
+.nav1:hover:before{
+    content: "Best Sellers";
+}
+
+.nav2::before{
+    /* 居家香氛 */
+    content: '\5c45\5bb6\9999\6c1b';
+}
+
+.nav2:hover:before{
+    content: "Home Fragrance";
+}
+
+.nav3::before{
+    /* 身體香氛 */
+    content: '\8eab\9ad4\9999\6c1b';
+}
+
+.nav3:hover:before{
+    content: "Body Fragrance";
+}
+
+.nav4::before{
+    /* 居家小物 */
+    content: '\5c45\5bb6\5c0f\7269';
+}
+
+.nav4:hover:before{
+    content: "Home Decor";
+}
+
+.nav5::before{
+    /* 品牌介紹 */
+    content: '\54c1\724c\4ecb\7d39';
+}
+
+.nav5:hover:before{
+    content: "Introdution";
+}
+
+.dropdown-item:focus{
+    background-color: #bbbbbb;
+}
+
+.form-inline{
+    flex-wrap: nowrap;
+}
+
+.form-control.search{
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid rgb(124, 124, 124);
+    width: 8rem !important;
+}
+
+.form-control.search:focus{
+    border-bottom: 1px solid #000;
+    box-shadow: none;
+}
+
+.btn-secondary{
+    border: none;
+    background: #FFF;
+    color: rgba(102, 102, 102, 0.9);
+}
+
+.btn-secondary:hover{
+    color: rgba(61, 41, 31, 0.6);
+}
+
+.banner{
+    /* margin-top: 100px; */
+}
+
+@media (max-width:768px) {
+    .banner{
+        margin-top: 100px;
+    }
+    .row.w-75{
+        min-width: 100%;
+    }
+}
+
+.news a{
+    color: rgba(102, 102, 102, 0.9);
+    transition: 0.5s;
+}
+
+.news a:hover{
+    color: rgba(61, 41, 31, 0.6);
+}
+
+.card a{
+    color: rgba(102, 102, 102, 0.9);
+    transition: 0.5s;
+}
+
+.card a:hover{
+    color: rgba(61, 41, 31, 0.6);
+}
+
+.btn.btn-main{
+    color:#fff;
+    background-color:#666666;
+    border-color:#666666;
+}
+
+.btn.btn-main:hover{
+    color:#fff;
+    background-color:#3D291F;
+    border-color:#302119;
+}
+
+.btn.btn-main.focus,.btn.btn-main:focus{
+    color:#fff;
+    background-color:#3D291F;
+    border-color:#302119;
+    box-shadow:0 0 0 .2rem rgba(61, 41, 31,.5);
+}
+
+.btn.btn-main.disabled,.btn.btn-main:disabled{
+    color:#fff;
+    background-color:#666666;
+    border-color:#666666;
+}
+
+.btn.btn-main:not(:disabled):not(.disabled).active,.btn.btn-main:not(:disabled):not(.disabled):active,
+.show>.btn-main.dropdown-toggle{
+    color:#fff;
+    background-color:#3D291F;
+    border-color:#302119;
+}
+
+.btn.btn-main:not(:disabled):not(.disabled).active:focus,
+.btn.btn-main:not(:disabled):not(.disabled):active:focus,
+.show>.btn-main.dropdown-toggle:focus{
+    box-shadow:0 0 0 .2rem rgba(61, 41, 31,.5);
+}
+
+.page-item.disabled .page-link,.page-item .page-link{
+    color: rgba(102, 102, 102, 0.9);
+    border: none;
+    border-bottom: 1px solid transparent;
+}
+
+.page-item .page-link:hover{
+    color: #000;
+    border-radius: 0;
+    border-bottom: #000 1px solid;
+    background-color: #fff;
+}
+
+.page-link:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.page-item.active .page-link{
+    border: none;
+    color: rgba(61, 41, 31);
+    background-color: #fff;
+}
+
+.footer ul a{
+    color: rgba(102, 102, 102, 0.9);
+}
+
+.footer ul a:hover{
+    color: rgba(61, 41, 31, 0.6);
+}
+
+@media (max-width:768px) {
+    .footer .col-sm-4.text-left{
+        text-align: center !important;
+    }
+}
+
+
+.breadcrumb{
+    background-color: #fff;
+    /* font-size: 2vmin; */
+}
+
+.breadcrumb-item+.breadcrumb-item::before{
+    content: ">";
+}
+
+.breadcrumb-item a{
+    color: rgba(102, 102, 102, 0.9);
+}
+
+.breadcrumb-item a:hover{
+    color: rgba(61, 41, 31, 0.6);
+}
+
+.alert.alert-dark{
+    background-color: rgba(61, 41, 31, 0.3);
+    color: rgb(61, 41, 31);
+}
+
+.badge .badge-dark{
+    font-size: 30%;
+}
+
+.card{
+    border: #3d291f6a 1px solid;
+}
+
+.card.mb-4{
+    border: none;
+}
+
+.login{
+    min-width: 40%;
+}
